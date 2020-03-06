@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  text-align: justify;
+}
+
+pre {
+  font-size: 16px;
+}
+
+.height-90 {
+  height: 90vh;
+  position: relative;
+}
+
+.middle-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.chart-title {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.MuiExpansionPanelSummary-root {
+  background-color: rgb(114, 114, 114) !important;
+}
+
+.dropdown-panel,
+.MuiList-root,
+.MuiInputBase-root,
+.MuiFormLabel-root {
+  background-color: rgb(99, 96, 96) !important;
+  color: white !important;
+}
+
+.MuiListItem-button:hover,
+.MuiListItem-root.Mui-selected {
+  text-decoration: none;
+  background-color: rgba(114, 114, 114) !important;
+}
+
+.dropdown-panel {
+  width: 600px;
+}
+
+.dropdown {
+  margin: 10px !important;
+}
+
+.text-area {
+  width: 600px;
+  margin: auto;
+}
+
+.donut-chart {
+  padding: 30px;
+  width: 600px;
+}
+
+@media (max-width: 600px) {
+  .donut-chart {
+    width: 100vw;
+    padding: 0px;
+  }
+  .dropdown-panel {
+    width: 90vw;
+  }
+  .MuiMenuItem-root, pre {
+    font-size: 3vw !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .text-area {
+    width: 80vw;
+  }
+}
+
+.apexcharts-legend-text {
+  color: white !important;
+}
+
+.MuiExpansionPanelDetails-root {
+  flex-direction: column;
+}
+
+.arrow {
+  text-align: center;
+  color: white;
+}
+.arrow-icon:hover {
+  cursor: pointer;
+}
+.arrow-icon {
+  height: 40px !important;
+  width: 40px !important;
+}
+.bounce {
+  -moz-animation: bounce2 2s infinite;
+  -webkit-animation: bounce2 2s infinite;
+  -o-animation: bounce2 2s infinite;
+  animation: bounce2 2s infinite !important;
+}
+@keyframes bounce2 {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+a:-webkit-any-link,
+a:-webkit-any-link:visited {
+  color: white
+}
+
+.apexcharts-text {
+  fill: rgb(255, 255, 255)
+}
