@@ -251,7 +251,7 @@ export default withRouter((props) => {
         <p>Cell B182 gave value "ABCDEFGHTY" for UKPRN. This was corrected to "10008026" when comparing with the value for St Mary's University College in Sheet 2 (Text Facet).</p>
         <p>Cell D172 gave value "The University of St Andrews Upon Hull" for HE provider. This University does not exist and was corrected to "The University of St Andrews" as also shown in Sheet 2 (Word Facet).</p>
         <p>Cell AK11 gave value "Total other EEC domicile" as a column header for part-time undergraduate's in other European Union domiciles. This was corrected to be "Total other EU domicile" to be consistent with the other "Other European Union domicile" column headers (Word Facet).</p>
-        <p>Cell BX145 gave value 157575575775 for total England students in other European domiciles taking their first degree. This was corrected to 1575 as these were the 4 leading digits and also equalled the sum of the precending values in the column (Numeric Facet).</p>
+        <p>Cell BX145 gave value 157575575775 for total England students in other European domiciles taking their first degree. This was corrected to 1575 as these were the 4 leading digits and was within a reasonable rounding distance of the sum of the precending values in the column (Numeric Facet).</p>
         <p>Cells CC104, CC105, CC106, CJ64, CJ182 gave values "NIL", "NULL", "ZERO", "nil", and "fifteen" respectively. These are inconsistent numerical representations compared to the rest of the dataset. Corrected to correct numerical formats as 0, 0, 0, 0, and 15 respectively (Numeric Facet).</p>
 
         <h4>Errors Found in Sheet 2</h4>
