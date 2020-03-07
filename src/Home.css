@@ -24,16 +24,10 @@ pre {
   font-size: 16px;
 }
 
-.height-90 {
-  height: 90vh;
-  position: relative;
-}
-
 .middle-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
 }
 
@@ -62,6 +56,7 @@ pre {
 
 .dropdown-panel {
   width: 600px;
+  margin-bottom: 20px;
 }
 
 .dropdown {
@@ -75,7 +70,8 @@ pre {
 
 .donut-chart {
   padding: 30px;
-  width: 600px;
+  width: 60vw;
+  max-width: 500px;
 }
 
 @media (max-width: 600px) {
