@@ -251,7 +251,7 @@ export default withRouter((props) => {
         <p>Cell B182 gave value "ABCDEFGHTY" for UKPRN. This was corrected to "10008026" when comparing with the value for St Mary's University College in Sheet 2 (Text Facet).</p>
         <p>Cell D172 gave value "The University of St Andrews Upon Hull" for HE provider. This University does not exist and was corrected to "The University of St Andrews" as also shown in Sheet 2 (Word Facet).</p>
         <p>Cell AK11 gave value "Total other EEC domicile" as a column header for part-time undergraduate's in other European Union domiciles. This was corrected to be "Total other EU domicile" to be consistent with the other "Other European Union domicile" column headers (Word Facet).</p>
-        <p>Cell BX145 gave value 157575575775 for total England students in other European domiciles taking their first degree. This was corrected to 1575 as these were the 4 leading digits and was within a reasonable rounding distance of the sum of the precending values in the column (Numeric Facet).</p>
+        <p>Cell BX145 gave value 157575575775 for total England students in other European domiciles taking their first degree. This was corrected to 1575 as these were the 4 leading digits and were within a reasonable rounding distance of the sum of the precending values in the column (Numeric Facet).</p>
         <p>Cells CC104, CC105, CC106, CJ64, CJ182 gave values "NIL", "NULL", "ZERO", "nil", and "fifteen" respectively. These are inconsistent numerical representations compared to the rest of the dataset. Corrected to correct numerical formats as 0, 0, 0, 0, and 15 respectively (Numeric Facet).</p>
 
         <h4>Errors Found in Sheet 2</h4>
@@ -287,11 +287,12 @@ export default withRouter((props) => {
         <p>This can be used for cases where a user wishes to quickly find the proportion of students that are female at a specific university for example.</p>
         <h3><b>Interaction and Functionality</b></h3>
         <p>The visualisation provides a filter section that allows you to select the UK country or university of your choice from a dropdown list which you would like the statistics for. You can also select the category you would like statistics for such as Age Group or Domicile numbers. This enables the whole dataset to be explored.</p>
-        <p>The visualisation dynamically loads the data and re-renders the chart when categories and universities are selected. It provides an animation to show the category sizes resizing upon a new selection.</p>
+        <p>The visualisation dynamically loads the data and re-renders the chart when categories and universities are selected, without the page having to be reloaded. It provides an animation to show the category sizes resizing upon a new selection.</p>
         <p>The legend labels can be hovered over to highlight specific sections within the visualisation. Sections on the visualisation can also be hovered over to reveal a tooltip as well as the total number of students for that section. This is highlighted in the centre of the visualisation as well as on the tooltip.</p>
         <p>The title of the visualisation also changes to correspond with the data being shown.</p>
         <h3><b>Additional Details</b></h3>
         <p>The visualisation is additionally enriched by calculating percentages of the total number of students in the category and displaying them on the section of the chart instead of just showing the pure numbers.</p>
+        <p>The website has also been developed to be responsive and will work on all screen sizes including mobile.</p>
         <p>The visualisation was developed using the <a href="https://apexcharts.com/">ApexCharts.js</a> library with some custom formatting code to get the desired effects for the user. Similarly to D3.js, this library draws SVG components onto the canvas but is more compatible with the framework used to produce this site as it doesn't try to compete with the framework to control the DOM like D3.js does.</p>
       </div>
     </div>
